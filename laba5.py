@@ -14,7 +14,7 @@ import matplotlib.pyplot as plt
 
 recursive_times = []
 iterative_times = []
-#try:
+try:
     print("Введите натуральное число n:")
     n = int(input())
     while n < 1:
@@ -69,9 +69,9 @@ iterative_times = []
 
     print(time.time())
 
-#except ValueError:
-#    print("\nВы ввели не натуральное число. Перезапустите программу.")
+except ValueError:
+    print("\nВы ввели не натуральное число. Перезапустите программу.")
 
-#except RecursionError:
+except RecursionError:
     print(
         "\nВы ввели слишком большое число. Перезапустите программу.")
