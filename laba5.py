@@ -9,18 +9,12 @@ def F_it(n):
         f_n[i] = f_n[i-2] * (i-1)
     return f_n[n]
 
-def F_it2(n):
-    res = 1
-    for i in range(2, n+1):
-        res = (2*i-1)
-    return res
-
 import time
 import matplotlib.pyplot as plt
 
 recursive_times = []
 iterative_times = []
-try:
+#try:
     print("Введите натуральное число n:")
     n = int(input())
     while n < 1:
@@ -75,9 +69,9 @@ try:
 
     print(time.time())
 
-except ValueError:
-    print("\nВы ввели не натуральное число. Перезапустите программу.")
+#except ValueError:
+#    print("\nВы ввели не натуральное число. Перезапустите программу.")
 
-except RecursionError:
+#except RecursionError:
     print(
         "\nВы ввели слишком большое число. Перезапустите программу.")
